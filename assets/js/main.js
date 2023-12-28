@@ -78,12 +78,11 @@
         fade: true,
         loop: true,
         dots: true,
-        rtl:true,
         arrows: true,
         prevArrow: '<span class="slider-btn slider-prev"><i class="fi-rs-angle-left"></i></span>',
         nextArrow: '<span class="slider-btn slider-next"><i class="fi-rs-angle-right"></i></span>',
         appendArrows: ".hero-slider-1-arrow",
-        autoplay: false
+        autoplay: true
     });
 
     /*Carausel 8 columns*/
@@ -101,7 +100,6 @@
             slidesToShow: 8,
             slidesToScroll: 1,
             loop: true,
-            rtl: true,
             adaptiveHeight: true,
             responsive: [
                 {
@@ -147,7 +145,6 @@
             slidesToShow: 10,
             slidesToScroll: 1,
             loop: true,
-            rtl: true,
             adaptiveHeight: true,
             responsive: [
                 {
@@ -193,7 +190,6 @@
             slidesToShow: 4,
             slidesToScroll: 1,
             loop: true,
-            rtl: true,
             adaptiveHeight: true,
             responsive: [
                 {
@@ -231,7 +227,6 @@
             slidesToShow: 3,
             slidesToScroll: 1,
             loop: true,
-            rtl: true,
             adaptiveHeight: true,
             responsive: [
                 {
@@ -280,7 +275,6 @@
         loop: true,
         dots: false,
         arrows: true,
-        rtl: true,
         prevArrow: '<span class="pro-icon-1-prev"><i class="fi-rs-angle-small-left"></i></span>',
         nextArrow: '<span class="pro-icon-1-next"><i class="fi-rs-angle-small-right"></i></span>',
         responsive: [
@@ -319,7 +313,6 @@
         loop: true,
         dots: false,
         arrows: true,
-        rtl: true,
         prevArrow: '<span class="pro-icon-1-prev"><i class="fi-rs-angle-small-left"></i></span>',
         nextArrow: '<span class="pro-icon-1-next"><i class="fi-rs-angle-small-right"></i></span>',
         responsive: [
@@ -358,7 +351,6 @@
         loop: true,
         dots: true,
         arrows: false,
-        rtl: true,
         responsive: [
             {
                 breakpoint: 1199,
@@ -395,7 +387,6 @@
         loop: true,
         dots: false,
         arrows: false,
-        rtl: true,
         responsive: [
             {
                 breakpoint: 1199,
@@ -439,26 +430,6 @@
         }
     });
 
-    /*---------------------
-        Price range
-    --------------------- */
-    // if ($("#slider-range").length) {
-    //     var sliderrange = $("#slider-range");
-    //     var amountprice = $("#amount");
-    //     $(function () {
-    //         sliderrange.slider({
-    //             range: true,
-    //             min: 16,
-    //             max: 400,
-    //             values: [0, 300],
-    //             slide: function (event, ui) {
-    //                 amountprice.val("$" + ui.values[0] + " - $" + ui.values[1]);
-    //             }
-    //         });
-    //         amountprice.val("$" + sliderrange.slider("values", 0) + " - $" + sliderrange.slider("values", 1));
-    //     });
-    // }
-
     /*-------------------------------
         Sort by active
     -----------------------------------*/
@@ -478,7 +449,7 @@
         /*Close When Click Outside*/
         $body.on("click", function (e) {
             var $target = e.target;
-            if (!$($target).is(".sort-by-product-area") && !$($target).parents().is(".sort-by-product-area") && $cartWrap.hasClass("show")) {
+            if (!$($target).is(".sort-by-product-area") && !$($target).parents().is(".sort-by-product-area")) {
                 $cartWrap.removeClass("show");
                 $cartContent.removeClass("show");
             }
@@ -564,6 +535,8 @@
             }
         });
     });
+
+
 
     /*---------------------
         Select active
@@ -737,13 +710,14 @@
     $(".modal").on("shown.bs.modal", function (e) {
         $(".product-image-slider").slick("setPosition");
         $(".slider-nav-thumbnails").slick("setPosition");
-
-        $(".product-image-slider .slick-active img").elevateZoom({
-            zoomType: "inner",
-            cursor: "crosshair",
-            zoomWindowFadeIn: 500,
-            zoomWindowFadeOut: 750
-        });
+        if ($(window).width() > 768) {
+            $(".product-image-slider .slick-active img").elevateZoom({
+                zoomType: "inner",
+                cursor: "crosshair",
+                zoomWindowFadeIn: 500,
+                zoomWindowFadeOut: 750
+            });
+        }
     });
 
     /*--- VSticker ----*/
