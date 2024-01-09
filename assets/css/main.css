@@ -4724,6 +4724,19 @@ table.no-border td, table.no-border th, table.no-border thead {
   min-width: 200px;
 }
 
+.price-compare {
+  display: flex;
+}
+.price-compare h5 {
+  color: #00959b;
+}
+.price-compare .old-price {
+  font-size: 14px;
+  color: #adadad;
+  margin: 0 0 0 7px;
+  text-decoration: line-through;
+}
+
 /*BLOG*/
 .archive-header {
   background: url(../imgs/blog/header-bg.png) no-repeat center center;
@@ -7545,7 +7558,8 @@ span.fi-rs-apps {
 
 .price_range {
   background: url(../imgs/banner/fillter-widget-bg.png) no-repeat right bottom;
-  background-size: 150px;
+  background-size: 220px;
+  background-position-x: 140px;
 }
 
 .primary-sidebar .sidebar-widget {

@@ -604,6 +604,7 @@
 		border-radius: 3px;
 	}
 }
+
 .product-sidebar {
 	.single-post {
 		position: relative;
@@ -1590,4 +1591,17 @@ table.no-border {
 }
 .mw-200 {
 	min-width: 200px;
+}
+
+.price-compare{
+	display: flex;
+	h5{
+		color: #00959b;
+	}
+	.old-price {
+		font-size: $font-sm;
+		color: $color-grey-4;
+		margin: 0 0 0 7px;
+		text-decoration: line-through;
+	}
 }
