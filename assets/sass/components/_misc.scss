@@ -108,12 +108,15 @@
     display: inline-block;
     padding: 0;
     text-transform: capitalize;
-    color: $color-text;
+    color: white;
     font-size: $font-sm;
     font-weight: 600;
     background: none;
     margin: 0;
     border-radius: 0;
+    a{
+        color: $color-brand-2;
+    }
     span {
         position: relative;
         text-align: center;

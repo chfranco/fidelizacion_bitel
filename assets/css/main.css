@@ -2404,12 +2404,15 @@ input.qty-val {
   display: inline-block;
   padding: 0;
   text-transform: capitalize;
-  color: #7E7E7E;
+  color: white;
   font-size: 14px;
   font-weight: 600;
   background: none;
   margin: 0;
   border-radius: 0;
+}
+.breadcrumb a {
+  color: #FDC040;
 }
 .breadcrumb span {
   position: relative;
