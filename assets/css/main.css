@@ -2930,6 +2930,12 @@ table .product-thumbnail img {
   top: 100px;
   transform: none;
 }
+.banner-img.style-2 .banner-text h2 {
+  color: #fff;
+}
+.banner-img.style-2 .banner-text a {
+  margin-top: 30%;
+}
 .banner-img.style-3 {
   border-radius: 15px;
   overflow: hidden;
@@ -3477,7 +3483,7 @@ table .product-thumbnail img {
   color: #7E7E7E;
 }
 .product-cart-wrap .product-content-wrap .product-price {
-  margin-bottom: 30px;
+  margin-bottom: 6px;
 }
 .product-cart-wrap .product-content-wrap .product-price span {
   font-size: 18px;
@@ -3675,6 +3681,11 @@ table .product-thumbnail img {
   border-radius: 10px;
   box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.05);
   padding: 25px 30px;
+}
+.product-cart-wrap.style-2 .product-content-wrap .deals-content .btn-GanaPuntos {
+  background: #ffffff;
+  color: #00959b;
+  border: 1px solid #00959b;
 }
 .product-cart-wrap.style-2 .product-content-wrap .deals-countdown-wrap {
   position: absolute;
@@ -5829,7 +5840,7 @@ h6.post-title {
 
 .header-wrap {
   display: flex;
-  align-items: center;
+  justify-content: space-between;
 }
 .header-wrap .header-nav {
   display: flex;
@@ -5840,13 +5851,6 @@ h6.post-title {
 .header-wrap.header-space-between {
   justify-content: space-between;
 }
-.header-wrap .header-right {
-  width: 100%;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-
 .logo a {
   display: block;
 }

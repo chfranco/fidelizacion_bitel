@@ -236,7 +236,7 @@
 			color: $color-text;
 		}	
 		.product-price {
-			margin-bottom: 30px;
+			margin-bottom: 6px;
 			span {
 				font-size: 18px;
 				font-weight: bold;
@@ -462,6 +462,12 @@
 				border-radius: 10px;
 				box-shadow: $box-shadown-2;
 				padding: 25px 30px;
+
+				.btn-GanaPuntos{
+					background: #ffffff;
+					color: #00959b;
+					border: 1px solid #00959b;
+				}
 			}
 			.deals-countdown-wrap {
 				position: absolute;
