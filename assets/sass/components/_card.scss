@@ -214,6 +214,16 @@
         .card-header {
             border: 0;
             background: none;
+            display: flex;
+            align-items: center;
+            .avatar{
+                background: #1877F2;
+                width: 80px;
+                height: 80px;
+                border-radius: 50%;
+                margin-right: 10px;
+                overflow: hidden;
+            }
         }
         table td, table th {border: 0;}
         .table > thead {
