@@ -2,9 +2,7 @@
 /*Header default*/
 .header-top-ptb-1 {
 	padding: 7px 0;
-	border-bottom: 1px solid $border-color;
 	font-size: 13px;
-	line-height: 1;
 	#news-flash {
 		min-width: 400px;
 		font-size: 14px;
@@ -12,6 +10,7 @@
 		font-weight: 600;
 		li {
 			min-height: 14px;
+			text-align: center;
 		}
 		i {
 			line-height: 6px;

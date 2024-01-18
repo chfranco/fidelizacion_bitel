@@ -5741,9 +5741,7 @@ h6.post-title {
 /*Header default*/
 .header-top-ptb-1 {
   padding: 7px 0;
-  border-bottom: 1px solid #ececec;
   font-size: 13px;
-  line-height: 1;
 }
 .header-top-ptb-1 #news-flash {
   min-width: 400px;
@@ -5753,6 +5751,7 @@ h6.post-title {
 }
 .header-top-ptb-1 #news-flash li {
   min-height: 14px;
+  text-align: center;
 }
 .header-top-ptb-1 #news-flash i {
   line-height: 6px;
