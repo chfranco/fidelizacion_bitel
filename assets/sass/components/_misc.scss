@@ -318,6 +318,10 @@ table {
 
 .mobile-promotion {
     display: none;
+    a{
+        text-decoration: none;
+        color: white;
+    }
 }
 .bg-green {
     background-color: #cee8e0;
