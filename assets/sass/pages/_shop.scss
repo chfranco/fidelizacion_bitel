@@ -222,7 +222,6 @@
 		h2 {
 			font-size: 18px;
 			font-weight: 700;
-			margin-bottom: 25px;
 			a {
 				color: $color-heading;
 				&:hover {
@@ -297,6 +296,13 @@
 		display: flex;
 		justify-content: space-between;
 		margin-top: 15px;
+		.detail-qty {
+			max-width: 80px;
+			padding: 5px 20px;
+			position: relative;
+			width: 100%;
+			border-radius: 5px;
+		}
 		.add-cart {
 			cursor: pointer;
 			.add {

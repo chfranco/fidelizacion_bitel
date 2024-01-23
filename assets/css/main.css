@@ -3483,7 +3483,6 @@ table .product-thumbnail img {
 .product-cart-wrap .product-content-wrap h2 {
   font-size: 18px;
   font-weight: 700;
-  margin-bottom: 25px;
 }
 .product-cart-wrap .product-content-wrap h2 a {
   color: #253D4E;
@@ -3556,6 +3555,13 @@ table .product-thumbnail img {
   display: flex;
   justify-content: space-between;
   margin-top: 15px;
+}
+.product-cart-wrap .product-card-bottom .detail-qty {
+  max-width: 80px;
+  padding: 5px 20px;
+  position: relative;
+  width: 100%;
+  border-radius: 5px;
 }
 .product-cart-wrap .product-card-bottom .add-cart {
   cursor: pointer;
