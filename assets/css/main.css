@@ -2810,6 +2810,10 @@ table .product-thumbnail img {
 .mobile-promotion {
   display: none;
 }
+.mobile-promotion a {
+  text-decoration: none;
+  color: white;
+}
 
 .bg-green {
   background-color: #cee8e0;
