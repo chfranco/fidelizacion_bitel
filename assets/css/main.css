@@ -5814,6 +5814,7 @@ h6.post-title {
   position: absolute;
   top: 100%;
   left: 0;
+  left: -60px;
   z-index: 2;
   min-width: 120px;
   background: #fff;
