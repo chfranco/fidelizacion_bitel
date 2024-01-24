@@ -5806,6 +5806,10 @@ h6.post-title {
   font-size: 12px;
   margin-right: 5px;
 }
+.header-info > ul > li a.language-dropdown-active img {
+  width: 16px;
+  margin-right: 5px;
+}
 .header-info > ul > li a.language-dropdown-active i.fa-chevron-down {
   font-size: 8px;
   margin-left: 5px;
@@ -5814,7 +5818,7 @@ h6.post-title {
   position: absolute;
   top: 100%;
   left: 0;
-  left: -60px;
+  left: -36px;
   z-index: 2;
   min-width: 120px;
   background: #fff;
