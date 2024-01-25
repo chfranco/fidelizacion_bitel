@@ -3285,6 +3285,7 @@ table .product-thumbnail img {
   border: 1px solid #ececec;
   border-radius: 15px;
   overflow: hidden;
+  height: 420px;
   transition: 0.2s;
   -moz-transition: 0.2s;
   -webkit-transition: 0.2s;
