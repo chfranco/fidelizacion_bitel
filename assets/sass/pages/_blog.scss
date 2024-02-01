@@ -124,9 +124,13 @@
 }
 .single-thumbnail {
     margin-bottom: 30px;
+	height: 300px;
+	border-radius: 20px;
     img{
         border-radius: 15px;
         overflow: hidden;
+		height: 100%;
+		width: 100%;
     }
 }
 .entry-bottom {

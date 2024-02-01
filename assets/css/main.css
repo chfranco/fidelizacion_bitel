@@ -4915,10 +4915,14 @@ table.no-border td, table.no-border th, table.no-border thead {
 
 .single-thumbnail {
   margin-bottom: 30px;
+  height: 300px;
+  border-radius: 20px;
 }
 .single-thumbnail img {
   border-radius: 15px;
   overflow: hidden;
+  height: 100%;
+  width: 100%;
 }
 
 .entry-bottom {
